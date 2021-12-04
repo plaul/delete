@@ -25,7 +25,8 @@ public class CustomerResource {
 
   @GetMapping
   Iterable<Customer> getAll() {
-    return personRepository.findAll();
+    Iterable<Customer> all = personRepository.findAll();
+    return all;
   }
 
   @GetMapping("/{id}")

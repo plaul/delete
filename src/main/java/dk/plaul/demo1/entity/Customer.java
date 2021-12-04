@@ -23,7 +23,7 @@ public class Customer {
 
   
   private String managerId;
-  private Integer customerRating;
+  private String customerRating;
   @CreationTimestamp
   private LocalDateTime created;
 
@@ -57,11 +57,11 @@ public class Customer {
     this.lastName = lastName;
   }
 
-  public int getCustomerRating() {
+  public String getCustomerRating() {
     return customerRating;
   }
 
-  public void setCustomerRating(int customerRating) {
+  public void setCustomerRating(String customerRating) {
     this.customerRating = customerRating;
   }
 
