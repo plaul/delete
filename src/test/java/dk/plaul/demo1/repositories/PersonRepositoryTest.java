@@ -19,7 +19,7 @@ class PersonRepositoryTest {
     @Test
     public void dbCountTest(){
         long count = personRepository.count();
-        assertEquals(3,count);
+        assertEquals(113,count);
     }
 
     @Test
