@@ -20,7 +20,7 @@ class CustomerRepositoryTest {
     @Test
     public void testCount(){
         long result = customerRepository.count();
-        assertEquals(3,result);
+        assertEquals(13,result);
     }
 
 }
