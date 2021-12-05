@@ -25,9 +25,7 @@ class PersonRepositoryTest {
     @Test
     public void demoTest(){
         var persons = personRepository.findAll();
-        persons.forEach(p ->{
-            System.out.println(p.getId() +", " + p.getFirstName());
-        });
+        persons.forEach(p -> System.out.println(p.getId() +", " + p.getFirstName()));
         var customer = personRepository.save(new Customer("Kurt","Wonnegut","kw@kw.com"));
         System.out.println(customer.getId());
     }
@@ -35,9 +33,7 @@ class PersonRepositoryTest {
     @Test
     public void demoTest2(){
         var customers = personRepository.findAll();
-        customers.forEach(p ->{
-            System.out.println(p.getId() +", " + p.getFirstName());
-        });
+        customers.forEach(p -> System.out.println(p.getId() +", " + p.getFirstName()));
         var customer = personRepository.save(new Customer("Kurt","Wonnegut","kw@kw.com"));
         System.out.println(customer.getId());
     }
