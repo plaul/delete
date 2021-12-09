@@ -1,8 +1,6 @@
-package dk.plaul.demo1.rest;
+package dk.plaul.demo1.api;
 
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.Date;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +23,7 @@ public class CustomerResource {
 
   @GetMapping("/msg")
   String getMsg() {
-    return "{\"msg\": \"HI WORLD\"";
+    return "{\"msg\": \"HEllo WORLD\"";
   }
   @GetMapping
   Iterable<Customer> getAll() {
