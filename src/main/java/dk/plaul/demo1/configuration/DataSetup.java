@@ -18,6 +18,7 @@ public class DataSetup implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
+    personRepository.deleteAll();
     personRepository.save(new Customer("Peter", "Olsen","po@somewhere.com"));
     personRepository.save(new Customer("Hanne", "Olsen","ho@somewhere.com"));
   }

@@ -23,6 +23,10 @@ public class CustomerResource {
   }
 
 
+  @GetMapping("/msg")
+  String getMsg() {
+    return "{\"msg\": \"HI WORLD\"";
+  }
   @GetMapping
   Iterable<Customer> getAll() {
     Iterable<Customer> all = personRepository.findAll();
