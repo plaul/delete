@@ -23,7 +23,7 @@ public class CustomerResource {
 
   @GetMapping("/msg")
   String getMsg() {
-    return "{\"msg\": \"Hi Erik\"";
+    return "{\"msg\": \"Hello World\"";
   }
   @GetMapping
   Iterable<Customer> getAll() {
